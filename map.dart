@@ -6,6 +6,10 @@ void main() {
     "course": "english"
   };
 
+  studetdata.forEach((key, value) {
+    print("hello, $value[name]");
+  });
+
   studetdata.remove("name");
   studetdata.removeWhere((key, value) => value.startsWith("e"));
 
